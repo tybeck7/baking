@@ -1,0 +1,27 @@
+{
+  "name": "get-baked",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tybeck7/baking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aimtruong/get-baked/issues"
+  },
+  "homepage": "https://github.com/aimtruong/get-baked#readme",
+  "dependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
